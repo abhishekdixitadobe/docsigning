@@ -1,0 +1,26 @@
+server:
+  port: 8090
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB        
+  application:
+    name: Doc Sign Application
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+filePath: C:\\Users\\abhishekd\\OneDrive - Adobe\\Abhishek\\Adobe_Oct_21\\Adobe Sign\\DCE Bootcamp\\Combine Files
+integration-key: 3AAABLblqZhDm5X_yU6Up152VobNPIU4PfSDMwi_Jq8-t7hNdykJj8HYeHv8h5hWC5Qg5f1FcHgsqwnTIQQs7rBAe4bWz_cmM   
+createContractPath: src/main/resources/contract/exitForm/index.zip
+DocGenAPI: https://pdf-services-ue1.adobe.io
+application:
+  signUrl: https://abhishekdixitg.in1.adobesign.com/public/oauth/v2
+  clientId: CBJCHBCAABAASzzK0BzsLDPc1N4qS1CizI9HkP2R5HiW
+  redirectUrl: https://localhost:8090
+  clientSecret: k8Zl5b-bstRE68dn1Kv1I_Zl1Owg92FM
+  code: CBNCKBAAHBCAABAAACOm7N8sZ1CkoH9fyP3ZgGsQASvKihmj
+  scope: user_read:account+user_write:account+user_login:account+agreement_read:account+agreement_write:account+agreement_send:account+widget_read:account+widget_write:account+library_read:account+library_write:account+application_read:account+application_write:account+webhook_read:account+webhook_write:account+webhook_retention:account
+    
