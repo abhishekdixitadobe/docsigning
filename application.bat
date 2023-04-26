@@ -1,1 +1,1 @@
-java -jar -Dspring.config.location=./application.yml target/acrobatsignbulkoperationtool-0.0.1-SNAPSHOT.jar
+java -jar -Dspring.config.location=./application.yml target/docsigning-0.0.1-SNAPSHOT.jar
