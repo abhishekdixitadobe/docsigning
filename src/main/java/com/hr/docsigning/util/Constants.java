@@ -51,6 +51,9 @@ public class Constants {
 	public static final String COMBINE_ENDPOINT = "/combine";
 
 	/** The Constant MERGE_ENDPOINT. */
+	public static final String MERGE_DOCUMENT_ENDPOINT = "/mergeOperation";
+
+	/** The Constant MERGE_ENDPOINT. */
 	public static final String MERGE_ENDPOINT = "/merge";
 
 	/** The Constant CREATE_ENDPOINT. */

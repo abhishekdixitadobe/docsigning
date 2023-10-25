@@ -117,6 +117,12 @@ public class FileStorageService {
 	@Value(value = "${integration-key}")
 	private String integrationKey;
 
+	@Value(value = "${pdf_services_client_id}")
+	private String pdfServiceClientId;
+
+	@Value(value = "${pdf_services_client_secret}")
+	private String pdfServiceClientSecret;
+
 	@Autowired
 	AdobeSignService adobeSignService;
 
@@ -273,8 +279,8 @@ public class FileStorageService {
 	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	private ExecutionContext getContext() throws IOException {
-		final Credentials credentials = Credentials.serviceAccountCredentialsBuilder()
-				.fromFile("pdftools-api-credentials.json").build();
+		Credentials credentials = Credentials.servicePrincipalCredentialsBuilder().withClientId(pdfServiceClientId)
+				.withClientSecret(pdfServiceClientSecret).build();
 
 		// Create an ExecutionContext using credentials
 		// and create a new operation instance.
